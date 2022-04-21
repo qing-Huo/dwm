@@ -13,7 +13,7 @@
 			sudo pacman -S backlight		# 屏幕亮度调节	命令： light	
 			sudo pacman -S kdiff3		# git merge 冲突时的调试工具	
 			sudo yay -S picom-jonaburg-git		# 屏幕混成器(pacman内的我无法设置terminal背景透明)	
-			```
+		```
 
 ##	配置文件
 	```
@@ -24,7 +24,7 @@
 		sudo systemctl enable --now udisks2		# 为硬盘识别设置开机自启
 		git config --global merge.tool kdiff3		#为git指定merge冲突时的工具
 
-~/.xinitrc  在 exec dwm 之前写入 
+		~/.xinitrc  在 exec dwm 之前写入 
 		picom --experimental-backends --config ~/.config/picom/picom.conf -b  # 屏幕混合器(背景透明，特效。。。)
 		xrandr --output eDP --mode 2880x1800 --rate 60 --scale 0.5x0.5	#适配分辨率
 	```
